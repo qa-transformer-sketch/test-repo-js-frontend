@@ -7,14 +7,17 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "upload-sourcemap-to-sailfish 0718505c-7250-4ac4-9f8e-ca14a771b89c"
   },
   "dependencies": {
+    "@sailfish-ai/recorder": "1.8.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@sailfish-ai/sf-map-utils": "0.4.2",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
